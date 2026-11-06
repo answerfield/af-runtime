@@ -1,0 +1,38 @@
+{
+  "name": "@answerfield/runtime-wc",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "out",
+    "!out/**/*.map",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./out/index.d.ts",
+      "af-source": "./src/index.ts",
+      "default": "./out/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@answerfield/bundle": "https://github.com/answerfield/af-format/releases/download/v0.1.0/answerfield-bundle-0.1.0.tgz",
+    "@answerfield/expr": "https://github.com/answerfield/af-format/releases/download/v0.1.0/answerfield-expr-0.1.0.tgz",
+    "@answerfield/runtime-core": "0.1.0"
+  },
+  "devDependencies": {
+    "@answerfield/compiler": "https://github.com/answerfield/af-language/releases/download/v0.1.0/answerfield-compiler-0.1.0.tgz",
+    "happy-dom": "^21.0.1",
+    "vitest": "^5.0.5"
+  },
+  "description": "Intern (Hosts nutzen @answerfield/player): Darstellung als Web Components",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/answerfield/af-runtime",
+    "directory": "packages/runtime-wc"
+  }
+}

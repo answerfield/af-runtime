@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/runtime-core"
+    },
+    {
+      "path": "packages/runtime-wc"
+    },
+    {
+      "path": "packages/practice"
+    },
+    {
+      "path": "packages/player"
+    }
+  ]
+}
